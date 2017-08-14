@@ -38,7 +38,7 @@
                 k = /\d/.test(newDate[0]) ? 1 : 0,
                 date = newDate[1 + k] + '-' + newDate[2 + k];
 
-            //Check if object exists
+            // Check if object exists
             if (!events.hasOwnProperty(date)) {
                 events[date] = {};
                 var $newList = $('<ul />', {
@@ -64,7 +64,7 @@
                 eventLink = $.trim($($this).find('td:nth-child(1)').html()),
                 start = $.trim($($this).find('td:nth-child(2)').html()),
                 end = $.trim($($this).find('td:nth-child(3)').html());
-            //Create the new layout
+            // Create the new layout
             createEvent(i, eventLink, start, end);
         }
 
